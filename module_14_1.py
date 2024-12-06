@@ -17,8 +17,6 @@ for i in range(1, 11):
 
 cursor.execute('UPDATE Users SET balance = 500 WHERE id % 2 != 0')
 
-
-
 i = 1
 while i < 11:
     cursor.execute(f'DELETE FROM Users WHERE id = {i}')
